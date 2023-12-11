@@ -1,0 +1,57 @@
+[
+  {
+    "model": "main.customer",
+    "pk": 1,
+    "fields": {
+      "first_name": "Ivanov",
+      "last_name": "Ivan",
+      "surname": "Ivanovich",
+      "phone_number": "+375336541236"
+    }
+  },
+  {
+    "model": "main.developer",
+    "pk": 1,
+    "fields": {
+      "first_name": "Developer",
+      "last_name": "Sergey",
+      "surname": "Anatolievich",
+      "phone_number": "+375447561457"
+    }
+  },
+  {
+    "model": "main.tester",
+    "pk": 1,
+    "fields": {
+      "first_name": "Tester",
+      "last_name": "Yan",
+      "surname": "Dmitrievich",
+      "phone_number": "+3752935615427"
+    }
+  },
+  {
+    "model": "main.database",
+    "pk": 1,
+    "fields": {
+      "name": "project_database",
+      "size": 4000,
+      "admin": 1
+    }
+  },
+  {
+    "model": "main.project",
+    "pk": 1,
+    "fields": {
+      "name": "project",
+      "cost": 100000,
+      "customer": 1,
+      "database": 1,
+      "developers": [
+        1
+      ],
+      "testers": [
+        1
+      ]
+    }
+  }
+]
